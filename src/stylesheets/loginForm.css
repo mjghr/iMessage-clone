@@ -1,0 +1,142 @@
+.loginForm {
+  background-color: white;
+  box-shadow: 0px 7px 25px rgba(0, 0, 0, 0.3), 5px 5px 30px rgb(0, 130, 255);
+  border-radius: 10px;
+  width: 400px;
+}
+
+.loginForm > h1 {
+  text-transform: capitalize;
+  padding-top: 15px;
+  font-size: 2rem;
+  padding-bottom: 20px;
+  border-bottom: 1px solid silver;
+  text-align: center;
+}
+
+.loginForm > form {
+  padding: 0 40px;
+}
+
+.loginForm__txt {
+  position: relative;
+  border-bottom: 2px solid #adadad;
+  margin: 35px 0;
+}
+
+.loginForm__txt > input {
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.loginForm__txt > label {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: #adadad;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.loginForm__txt > span::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: rgb(0, 160, 255);
+}
+
+.loginForm__txt input:focus ~ label,
+.loginForm__txt input:valid ~ label {
+  top: -5px;
+  color: #3e93fd;
+}
+
+.loginForm__txt input:focus ~ span::before,
+.loginForm__txt input:valid ~ span::before {
+  width: 100%;
+}
+
+.loginForm__pass {
+  margin: -5px 0 20px 5px !important;
+}
+
+.loginForm__pass .pass__link {
+  text-decoration: none !important;
+  cursor: pointer;
+  color: #a6a6a6;
+}
+
+.loginForm__pass:hover .pass__link {
+  text-decoration: underline !important;
+}
+
+.loginForm__btn {
+  text-transform: capitalize;
+  backface-visibility: hidden;
+  display: inline-block;
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
+  font-size: 1.1rem;
+  border: 1px solid;
+  height: 50px;
+  background-color: rgb(0, 160, 255);
+  border-radius: 20px;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.loginForm__btn:hover {
+  transform: scale(1.02);
+}
+
+.loginForm__link {
+  /* margin: 30px 0; */
+  padding: 25px;
+  text-align: center;
+  font-size: 1rem;
+  color: #666666;
+}
+
+.loginForm__link > .login__link__link {
+  text-transform: capitalize;
+  color: #00a0ff;
+  text-decoration: none;
+}
+
+.loginForm__link > .login__link__link:hover {
+  text-decoration: underline;
+}
+
+.label__icon {
+  margin-right: 7px;
+}
+
+@media (max-width: 468px) {
+  .loginForm {
+    width: 350px;
+  }
+}
+
+@media (max-width: 615px) {
+}
+
+@media (max-width: 394px) {
+  .loginForm {
+    width: 320px;
+  }
+}
