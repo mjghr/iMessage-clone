@@ -19,8 +19,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - In your terminal, cd into the directory you just created
 - Type ```npm install``` to install all dependencies
 - Go to <a href="https://firebase.google.com/" target="_blank">firebase</a> then create a project
-- Add a new app to the project then copy the firebase configurations for that app
-- add your firebase configurations in path cloned-directory/src/auth/firebase.js
+- copy and add your peoject web app configurations in path cloned-directory/src/auth/firebase.js
 - Last, but not least, type ```npm start``` to run the app locally.
 
 - To look at the code, just open up the project in your favorite code editor!
